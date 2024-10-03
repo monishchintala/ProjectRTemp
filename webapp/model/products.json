@@ -279,34 +279,6 @@
           "price": 899.99
         }
       ]
-    },
-    {
-      "companyId": 11,
-      "companyName": "HealthFirst Equipment",
-      "location": "Phoenix, AZ",
-      "foundedYear": "2017",
-      "CEO": "Sara Bennett",
-      "industry": "Fitness Equipment",
-      "products": [
-        {
-          "productId": 1101,
-          "productName": "Home Treadmill Plus",
-          "category": "Fitness Equipment",
-          "price": 1299.99
-        },
-        {
-          "productId": 1102,
-          "productName": "Elliptical Trainer",
-          "category": "Fitness Equipment",
-          "price": 899.99
-        },
-        {
-          "productId": 1103,
-          "productName": "Weight Bench Set",
-          "category": "Fitness Equipment",
-          "price": 499.99
-        }
-      ]
     }
   ],
   "companyLocations": [
