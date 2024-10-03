@@ -1,0 +1,131 @@
+<mvc:View xmlns="sap.m"
+    xmlns:f="sap.f"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core" controllerName="samview.projectrtemp.controller.App">
+    <App id="app">
+        <f:DynamicPage headerPinned="false">
+            <f:header>
+                <f:DynamicPageHeader>
+                    <f:content>
+                        <fb:FilterBar id="filterbar" persistencyKey="myPersKey" useToolbar="false" search=".onSearch" filterChange=".onFilterChange">
+                            <fb:filterGroupItems>
+                                <fb:FilterGroupItem name="industry" label="Industry" groupName="Group1" visibleInFilterBar="true" labelTooltip="Industry">
+                                    <fb:control>
+                                        <MultiComboBox name="industry" selectionChange=".onSelectionChange" items="{path: '/industries',templateShareable: true}">
+                                            <core:Item key="{key}" text="{name}"/>
+                                        </MultiComboBox>
+                                    </fb:control>
+                                </fb:FilterGroupItem>
+                                <fb:FilterGroupItem name="location" label="Location" groupName="Group1" visibleInFilterBar="true">
+                                    <fb:control>
+                                        <MultiComboBox name="Location" selectionChange=".onSelectionChange" items="{path: '/companyLocations',                                                 templateShareable: true                                             }">
+                                            <core:Item key="{key}" text="{name}"/>
+                                        </MultiComboBox>
+                                    </fb:control>
+                                </fb:FilterGroupItem>
+                                <fb:FilterGroupItem label="Founded Year" name="foundedYear" labelTooltip="Founded Year" visibleInFilterBar="true" groupTitle="Group Title" groupName="Group Name">
+                                    <fb:control>
+                                        <MultiComboBox name="year" selectionChange=".onSelectionChange" items="{path: '/years', templateShareable: true}">
+                                            <core:Item key="{key}" text="{name}"/>
+                                        </MultiComboBox>
+                                    </fb:control>
+                                </fb:FilterGroupItem>
+                            </fb:filterGroupItems>
+                        </fb:FilterBar>
+
+                    </f:content>
+                </f:DynamicPageHeader>
+            </f:header>
+
+            <f:content>
+                <Table xmlns:f="sap.f"
+                    xmlns:mvc="sap.ui.core.mvc"
+                    xmlns:core="sap.ui.core"
+                    xmlns="sap.m" noDataText="Drop column list items here and columns in the area above" growing="true" items="{path: '/companies'}" id="table1" itemPress=".onItemPress">
+                    <items>
+
+                        <ColumnListItem type="Navigation">
+
+                            <cells>
+
+                                <Text xmlns="sap.m" text="{companyId}"/>
+
+                                <Text xmlns="sap.m" text="{companyName}"/>
+
+                                <Text xmlns="sap.m" text="{location}"/>
+
+                                <Text xmlns="sap.m" text="{industry}"/>
+
+                                <Text xmlns="sap.m" text="{foundedYear}"/>
+
+                            </cells>
+
+
+
+                        </ColumnListItem>
+
+
+
+                    </items>
+                    <columns>
+                        <Column id="column3">
+
+                            <header>
+
+                                <Label text="ID" id="label3"/>
+
+
+
+                            </header>
+
+
+
+                        </Column>
+
+                        <Column id="column4">
+
+                            <header>
+
+                                <Label text="Company" id="label4"/>
+
+
+
+                            </header>
+
+
+
+                        </Column>
+
+                        <Column>
+                            <header>
+                                <Label text="Location"/>
+                            </header>
+                        </Column>
+
+                        <Column id="column1">
+
+                            <header>
+
+                                <Text text="Industry"/>
+
+                            </header>
+
+                        </Column>
+
+                        <Column id="column1_1727349525997">
+
+                            <header>
+
+                                <Text text="Founded Year"/>
+
+                            </header>
+
+                        </Column>
+                    </columns>
+                </Table>
+            </f:content>
+        </f:DynamicPage>
+    </App>
+
+</mvc:View>

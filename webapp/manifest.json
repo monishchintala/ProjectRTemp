@@ -1,0 +1,120 @@
+{
+  "_version": "1.65.0",
+  "sap.app": {
+    "id": "samview.projectrtemp",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "Sample Application",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.15.0",
+      "toolsId": "6607f76b-850d-43cc-a468-bf05d4f56b58"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "dependencies": {
+      "minUI5Version": "1.128.1",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {},
+        "sap.f": {},
+        "sap.suite.ui.generic.template": {},
+        "sap.ui.comp": {},
+        "sap.ui.generic.app": {},
+        "sap.ui.table": {},
+        "sap.ushell": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/products.json"
+      },
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "samview.projectrtemp.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+        "viewType": "XML",
+        "async": true,
+        "viewPath": "samview.projectrtemp.view",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "clearControlAggregation": false
+      },
+      "routes": [
+        {
+          "pattern": "",
+          "name": "App",
+          "view": "App",
+          "target": "App",
+          "controlAggregation": "pages"
+        },
+        {
+          "pattern": "Products/{id}",
+          "name": "Products",
+          "view": "Products",
+          "target": "Products",
+          "controlAggregation": "pages"
+        }
+      ],
+      "targets": {
+        "App": {
+          "viewName": "App",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false
+        },
+        "Products": {
+          "viewName": "Products",
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "samview.projectrtemp.view.App",
+      "type": "XML",
+      "async": true,
+      "id": "App"
+    }
+  }
+}

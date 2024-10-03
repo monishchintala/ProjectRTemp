@@ -1,0 +1,446 @@
+{
+  "companies": [
+    {
+      "companyId": 1,
+      "companyName": "Tech Solutions Inc.",
+      "location": "New York, NY",
+      "foundedYear": "2010",
+      "CEO": "John Doe",
+      "industry": "Technology",
+      "products": [
+        {
+          "productId": 101,
+          "productName": "Cloud Storage",
+          "category": "Software",
+          "price": 99.99
+        },
+        {
+          "productId": 102,
+          "productName": "Data Analytics Suite",
+          "category": "Software",
+          "price": 199.99
+        },
+        {
+          "productId": 103,
+          "productName": "Cybersecurity Shield",
+          "category": "Software",
+          "price": 299.99
+        }
+      ]
+    },
+    {
+      "companyId": 2,
+      "companyName": "Gadget World",
+      "location": "San Francisco, CA",
+      "foundedYear": "2015",
+      "CEO": "Jane Smith",
+      "industry": "Consumer Electronics",
+      "products": [
+        {
+          "productId": 201,
+          "productName": "Smartphone X",
+          "category": "Electronics",
+          "price": 799.99
+        },
+        {
+          "productId": 202,
+          "productName": "Laptop Pro",
+          "category": "Electronics",
+          "price": 1499.99
+        },
+        {
+          "productId": 203,
+          "productName": "Smartwatch Z",
+          "category": "Electronics",
+          "price": 399.99
+        }
+      ]
+    },
+    {
+      "companyId": 3,
+      "companyName": "Home Essentials",
+      "location": "Austin, TX",
+      "foundedYear": "2008",
+      "CEO": "Emily Green",
+      "industry": "Home Appliances",
+      "products": [
+        {
+          "productId": 301,
+          "productName": "Air Purifier",
+          "category": "Home Appliance",
+          "price": 299.99
+        },
+        {
+          "productId": 302,
+          "productName": "Robot Vacuum",
+          "category": "Home Appliance",
+          "price": 499.99
+        },
+        {
+          "productId": 303,
+          "productName": "Smart Thermostat",
+          "category": "Home Appliance",
+          "price": 199.99
+        }
+      ]
+    },
+    {
+      "companyId": 4,
+      "companyName": "Green Energy Corp.",
+      "location": "Seattle, WA",
+      "foundedYear": "2020",
+      "CEO": "Michael Brown",
+      "industry": "Renewable Energy",
+      "products": [
+        {
+          "productId": 401,
+          "productName": "Solar Panel Kit",
+          "category": "Renewable Energy",
+          "price": 2999.99
+        },
+        {
+          "productId": 402,
+          "productName": "Wind Turbine",
+          "category": "Renewable Energy",
+          "price": 4999.99
+        },
+        {
+          "productId": 403,
+          "productName": "Energy Storage System",
+          "category": "Renewable Energy",
+          "price": 1499.99
+        }
+      ]
+    },
+    {
+      "companyId": 5,
+      "companyName": "Fitness Gear Co.",
+      "location": "Los Angeles, CA",
+      "foundedYear": "2012",
+      "CEO": "Sarah Johnson",
+      "industry": "Fitness Equipment",
+      "products": [
+        {
+          "productId": 501,
+          "productName": "Treadmill Pro",
+          "category": "Fitness Equipment",
+          "price": 999.99
+        },
+        {
+          "productId": 502,
+          "productName": "Home Gym Set",
+          "category": "Fitness Equipment",
+          "price": 699.99
+        },
+        {
+          "productId": 503,
+          "productName": "Exercise Bike",
+          "category": "Fitness Equipment",
+          "price": 499.99
+        }
+      ]
+    },
+    {
+      "companyId": 6,
+      "companyName": "Urban Innovations",
+      "location": "New York, NY",
+      "foundedYear": "2010",
+      "CEO": "Alice Turner",
+      "industry": "Technology",
+      "products": [
+        {
+          "productId": 601,
+          "productName": "AI Assistant",
+          "category": "Software",
+          "price": 199.99
+        },
+        {
+          "productId": 602,
+          "productName": "Smart Cloud",
+          "category": "Software",
+          "price": 299.99
+        },
+        {
+          "productId": 603,
+          "productName": "Blockchain Security",
+          "category": "Software",
+          "price": 399.99
+        }
+      ]
+    },
+    {
+      "companyId": 7,
+      "companyName": "CitySoft Solutions",
+      "location": "New York, NY",
+      "foundedYear": "2010",
+      "CEO": "David Lee",
+      "industry": "Technology",
+      "products": [
+        {
+          "productId": 701,
+          "productName": "Enterprise ERP",
+          "category": "Software",
+          "price": 999.99
+        },
+        {
+          "productId": 702,
+          "productName": "HR Management Suite",
+          "category": "Software",
+          "price": 599.99
+        },
+        {
+          "productId": 703,
+          "productName": "Cloud Infrastructure",
+          "category": "Software",
+          "price": 799.99
+        }
+      ]
+    },
+    {
+      "companyId": 8,
+      "companyName": "EcoLife Products",
+      "location": "Portland, OR",
+      "foundedYear": "2016",
+      "CEO": "James Oliver",
+      "industry": "Renewable Energy",
+      "products": [
+        {
+          "productId": 801,
+          "productName": "Organic Solar Panels",
+          "category": "Renewable Energy",
+          "price": 3499.99
+        },
+        {
+          "productId": 802,
+          "productName": "Wind Power Generator",
+          "category": "Renewable Energy",
+          "price": 4599.99
+        },
+        {
+          "productId": 803,
+          "productName": "Hydrogen Fuel Cells",
+          "category": "Renewable Energy",
+          "price": 2499.99
+        }
+      ]
+    },
+    {
+      "companyId": 9,
+      "companyName": "FutureFit Gear",
+      "location": "Chicago, IL",
+      "foundedYear": "2014",
+      "CEO": "Paul Baker",
+      "industry": "Fitness Equipment",
+      "products": [
+        {
+          "productId": 901,
+          "productName": "CrossFit Machine",
+          "category": "Fitness Equipment",
+          "price": 1099.99
+        },
+        {
+          "productId": 902,
+          "productName": "Rowing Machine Pro",
+          "category": "Fitness Equipment",
+          "price": 799.99
+        },
+        {
+          "productId": 903,
+          "productName": "Smart Dumbbell Set",
+          "category": "Fitness Equipment",
+          "price": 299.99
+        }
+      ]
+    },
+    {
+      "companyId": 10,
+      "companyName": "KitchenMaster Appliances",
+      "location": "Dallas, TX",
+      "foundedYear": "2011",
+      "CEO": "Catherine Young",
+      "industry": "Home Appliances",
+      "products": [
+        {
+          "productId": 1001,
+          "productName": "Smart Refrigerator",
+          "category": "Home Appliance",
+          "price": 1999.99
+        },
+        {
+          "productId": 1002,
+          "productName": "Induction Cooktop",
+          "category": "Home Appliance",
+          "price": 699.99
+        },
+        {
+          "productId": 1003,
+          "productName": "Smart Oven",
+          "category": "Home Appliance",
+          "price": 899.99
+        }
+      ]
+    },
+    {
+      "companyId": 11,
+      "companyName": "HealthFirst Equipment",
+      "location": "Phoenix, AZ",
+      "foundedYear": "2017",
+      "CEO": "Sara Bennett",
+      "industry": "Fitness Equipment",
+      "products": [
+        {
+          "productId": 1101,
+          "productName": "Home Treadmill Plus",
+          "category": "Fitness Equipment",
+          "price": 1299.99
+        },
+        {
+          "productId": 1102,
+          "productName": "Elliptical Trainer",
+          "category": "Fitness Equipment",
+          "price": 899.99
+        },
+        {
+          "productId": 1103,
+          "productName": "Weight Bench Set",
+          "category": "Fitness Equipment",
+          "price": 499.99
+        }
+      ]
+    },
+    {
+      "companyId": 12,
+      "companyName": "CleanAir Innovations",
+      "location": "Denver, CO",
+      "foundedYear": "2009",
+      "CEO": "Andrew Cooper",
+      "industry": "Home Appliances",
+      "products": [
+        {
+          "productId": 1201,
+          "productName": "Smart Air Conditioner",
+          "category": "Home Appliance",
+          "price": 1499.99
+        },
+        {
+          "productId": 1202,
+          "productName": "Dehumidifier Pro",
+          "category": "Home Appliance",
+          "price": 499.99
+        },
+        {
+          "productId": 1203,
+          "productName": "Air Quality Monitor",
+          "category": "Home Appliance",
+          "price": 199.99
+        }
+      ]
+    }
+  ],
+  "companyLocations": [
+    {
+      "key": "New York, NY",
+      "name": "New York, NY"
+    },
+    {
+      "key": "San Francisco, CA",
+      "name": "San Francisco, CA"
+    },
+    {
+      "key": "Austin, TX",
+      "name": "Austin, TX"
+    },
+    {
+      "key": "Seattle, WA",
+      "name": "Seattle, WA"
+    },
+    {
+      "key": "Los Angeles, CA",
+      "name": "Los Angeles, CA"
+    },
+    {
+      "key": "Portland, OR",
+      "name": "Portland, OR"
+    },
+    {
+      "key": "Chicago, IL",
+      "name": "Chicago, IL"
+    },
+    {
+      "key": "Dallas, TX",
+      "name": "Dallas, TX"
+    },
+    {
+      "key": "Phoenix, AZ",
+      "name": "Phoenix, AZ"
+    },
+    {
+      "key": "Denver, CO",
+      "name": "Denver, CO"
+    }
+  ],
+  "years": [
+    {
+      "key": "2010",
+      "name": "2010"
+    },
+    {
+      "key": "2015",
+      "name": "2015"
+    },
+    {
+      "key": "2008",
+      "name": "2008"
+    },
+    {
+      "key": "2020",
+      "name": "2020"
+    },
+    {
+      "key": "2012",
+      "name": "2012"
+    },
+    {
+      "key": "2016",
+      "name": "2016"
+    },
+    {
+      "key": "2014",
+      "name": "2014"
+    },
+    {
+      "key": "2011",
+      "name": "2011"
+    },
+    {
+      "key": "2017",
+      "name": "2017"
+    },
+    {
+      "key": "2009",
+      "name": "2009"
+    }
+  ],
+  "industries": [
+    {
+      "key": "Technology",
+      "name": "Technology"
+    },
+    {
+      "key": "Consumer Electronics",
+      "name": "Consumer Electronics"
+    },
+    {
+      "key": "Home Appliances",
+      "name": "Home Appliances"
+    },
+    {
+      "key": "Renewable Energy",
+      "name": "Renewable Energy"
+    },
+    {
+      "key": "Fitness Equipment",
+      "name": "Fitness Equipment"
+    }
+  ]
+}

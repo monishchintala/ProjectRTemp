@@ -1,0 +1,94 @@
+<mvc:View xmlns="sap.uxap"
+    xmlns:m="sap.m"
+    xmlns:layout="sap.ui.layout"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core" controllerName="samview.projectrtemp.controller.Products">
+    <Page xmlns="sap.m" floatingFooter="true" showFooter="false" showNavButton="true" showSubHeader="false" navButtonPress=".onNavBack">
+        <content>
+            <ObjectPageLayout xmlns:m="sap.m"
+                xmlns:layout="sap.ui.layout"
+                xmlns:mvc="sap.ui.core.mvc"
+                xmlns:core="sap.ui.core"
+                xmlns="sap.uxap" enableLazyLoading="true" useIconTabBar="true" showTitleInHeaderContent="true" upperCaseAnchorBar="false" sectionChange="onSectionChange">
+                <headerTitle>
+                    <ObjectPageDynamicHeaderTitle>
+                        <expandedHeading>
+                            <m:Title xmlns:m="sap.m" text="{companyName}" wrapping="true"/>
+                        </expandedHeading>
+                        <expandedContent>
+                            <Text xmlns="sap.m" text="{CEO}"/>
+                        </expandedContent>
+                        <snappedContent>
+                            <Text xmlns="sap.m" text="{CEO}"/>
+                        </snappedContent>
+                        <snappedTitleOnMobile>
+                            <Title xmlns="sap.m" text="{CEO}" wrapping="true"/>
+                        </snappedTitleOnMobile>
+                        <snappedHeading>
+                            <Title xmlns="sap.m" text="{companyName}" wrapping="true"/>
+                        </snappedHeading>
+                    </ObjectPageDynamicHeaderTitle>
+                </headerTitle>
+                <headerContent>
+                    <m:FlexBox width="100%" id="box0" fitContainer="true" wrap="Wrap">
+                        <m:items>
+                            <layout:VerticalLayout width="100%" class="sapUiSmallMarginEnd">
+                                <layout:content>
+                                    <m:Label text="{location}" width="100%"/>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout width="100%" class="sapUiSmallMarginBeginEnd">
+                                <layout:content>
+                                    <m:Label text="{foundedYear}" width="100%"/>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                            <layout:VerticalLayout width="100%" class="sapUiSmallMarginBeginEnd">
+                                <layout:content>
+                                    <m:Label text="{industry}" width="100%"/>
+                                </layout:content>
+                            </layout:VerticalLayout>
+                        </m:items>
+                    </m:FlexBox>
+                </headerContent>
+                <sections>
+                    <ObjectPageSection titleUppercase="false" title="Products">
+                        <subSections>
+                            <ObjectPageSubSection titleUppercase="false">
+                                <blocks>
+                                    <m:Table xmlns:m="sap.m" noDataText="Drop column list items here and columns in the area above" items="{path: 'products'}">
+                                        <m:items>
+                                            <m:ColumnListItem type="Active">
+                                                <m:cells>
+                                                    <m:Text text="{productName}"/>
+                                                    <m:Text text="{category}"/>
+                                                    <m:Text text="{price}"/>
+                                                </m:cells>
+                                            </m:ColumnListItem>
+                                        </m:items>
+                                        <m:columns>
+                                            <m:Column>
+                                                <m:header>
+                                                    <m:Label text="Product"/>
+                                                </m:header>
+                                            </m:Column>
+                                            <m:Column>
+                                                <m:header>
+                                                    <m:Label text="Category"/>
+                                                </m:header>
+                                            </m:Column>
+                                            <m:Column>
+                                                <m:header>
+                                                    <m:Label text="Price"/>
+                                                </m:header>
+                                            </m:Column>
+                                        </m:columns>
+                                    </m:Table>
+                                </blocks>
+                            </ObjectPageSubSection>
+                        </subSections>
+                    </ObjectPageSection>
+                </sections>
+            </ObjectPageLayout>
+        </content>
+    </Page>
+</mvc:View>
