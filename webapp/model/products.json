@@ -279,6 +279,62 @@
           "price": 899.99
         }
       ]
+    },
+    {
+      "companyId": 11,
+      "companyName": "HealthFirst Equipment",
+      "location": "Phoenix, AZ",
+      "foundedYear": "2017",
+      "CEO": "Sara Bennett",
+      "industry": "Fitness Equipment",
+      "products": [
+        {
+          "productId": 1101,
+          "productName": "Home Treadmill Plus",
+          "category": "Fitness Equipment",
+          "price": 1299.99
+        },
+        {
+          "productId": 1102,
+          "productName": "Elliptical Trainer",
+          "category": "Fitness Equipment",
+          "price": 899.99
+        },
+        {
+          "productId": 1103,
+          "productName": "Weight Bench Set",
+          "category": "Fitness Equipment",
+          "price": 499.99
+        }
+      ]
+    },
+    {
+      "companyId": 12,
+      "companyName": "CleanAir Innovations",
+      "location": "Denver, CO",
+      "foundedYear": "2009",
+      "CEO": "Andrew Cooper",
+      "industry": "Home Appliances",
+      "products": [
+        {
+          "productId": 1201,
+          "productName": "Smart Air Conditioner",
+          "category": "Home Appliance",
+          "price": 1499.99
+        },
+        {
+          "productId": 1202,
+          "productName": "Dehumidifier Pro",
+          "category": "Home Appliance",
+          "price": 499.99
+        },
+        {
+          "productId": 1203,
+          "productName": "Air Quality Monitor",
+          "category": "Home Appliance",
+          "price": 199.99
+        }
+      ]
     }
   ],
   "companyLocations": [
